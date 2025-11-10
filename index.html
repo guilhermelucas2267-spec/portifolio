@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Lucas - Desenvolvedor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fundo-animado">
+        <div class="formas-flutuantes">
+            <div class="forma forma-1"></div>
+            <div class="forma forma-2"></div>
+            <div class="forma forma-3"></div>
+            <div class="forma forma-4"></div>
+            <div class="forma forma-5"></div>
+            <div class="forma forma-6"></div>
+        </div>
+        <div class="container-particulas" id="particulas"></div>
+        <div class="sobreposicao-gradiente"></div>
+    </div>
+
+    <header>
+        <nav class="barra-navegacao">
+            <div class="marca-navegacao">Guilherme Lucas</div>
+            <ul class="menu-navegacao">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#areas">Áreas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="alternador-modo-escuro" id="alternadorModoEscuro">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="conteudo-hero">
+            <h1>Olá, sou <span class="destaque">Guilherme Lucas</span></h1>
+            <p>Desenvolvedor de <span class="texto-digitando" id="textoDigitando"></span></p>
+            <div class="botoes-hero">
+                <a href="#contato" class="botao">Entrar em Contato</a>
+                <button class="botao botao-download" id="botaoDownload">
+                    <i class="fas fa-download"></i>
+                    Baixar Currículo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="titulo-secao">Sobre Mim</h2>
+            <div class="conteudo-sobre">
+                <div class="texto-sobre">
+                    <p>Sou um desenvolvedor iniciante apaixonado por tecnologia. Estou sempre aprendendo novas tecnologias e buscando melhorar minhas habilidades.</p>
+                    <p>Atualmente focado em desenvolvimento full-stack e em busca da primeira oportunidade no mercado.</p>
+                </div>
+                <div class="imagem-sobre">
+                    <div class="placeholder-imagem">
+                        <img src="unnamed.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+        <div class="container">
+            <h2 class="titulo-secao">Minhas Habilidades</h2>
+            <div class="grade-habilidades">
+                <div class="item-habilidade" data-habilidade="html">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Clique para saber mais</p>
+                </div>
+                <div class="item-habilidade" data-habilidade="css">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <p>Clique para saber mais</p>
+                </div>
+                <div class="item-habilidade" data-habilidade="javascript">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Clique para saber mais</p>
+                </div>
+                <div class="item-habilidade" data-habilidade="csharp">
+                    <i class="fas fa-code"></i>
+                    <h3>C#</h3>
+                    <p>Clique para saber mais</p>
+                </div>
+                <div class="item-habilidade" data-habilidade="sql">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                    <p>Clique para saber mais</p>
+                </div>
+                <div class="item-habilidade" data-habilidade="java">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                    <p>Clique para saber mais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modalHabilidade" class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar-modal">&times;</span>
+            <h2 id="tituloHabilidadeModal">Habilidade</h2>
+            <div id="conteudoHabilidadeModal">
+                <p>Conteúdo da habilidade...</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2 class="titulo-secao">Meus Projetos</h2>
+            <div class="grade-projetos">
+                <div class="cartao-projeto">
+                    <h3>Sistema Banco de Dados</h3>
+                    <p>Sistema completo de gerenciamento de banco de dados com interface moderna</p>
+                    <a href="https://github.com/guilhermelucas2267-spec/sistema-banco-dados" target="_blank" class="botao">
+                        <i class="fab fa-github"></i>
+                        Ver Projeto
+                    </a>
+                </div>
+                <div class="cartao-projeto">
+                    <h3>Site de Convites</h3>
+                    <p>Plataforma para criação e envio de convites digitais personalizados</p>
+                    <a href="https://github.com/guilhermelucas2267-spec/site-convites" target="_blank" class="botao">
+                        <i class="fab fa-github"></i>
+                        Ver Projeto
+                    </a>
+                </div>
+                <div class="cartao-projeto">
+                    <h3>Site Empresarial</h3>
+                    <p>Website institucional responsivo para empresa de geradores</p>
+                    <a href="https://github.com/guilhermelucas2267-spec/site-empresarial" target="_blank" class="botao">
+                        <i class="fab fa-github"></i>
+                        Ver Projeto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="areas" class="areas">
+        <div class="container">
+            <h2 class="titulo-secao">Áreas dos Projetos</h2>
+            <div class="grade-areas">
+                <div class="item-area">
+                    <a href="https://www.linkedin.com/in/guilherme-lucas-26411a396/" target="_blank" class="link-area">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Conecte-se profissionalmente</p>
+                    </a>
+                </div>
+                <div class="item-area">
+                    <a href="https://github.com/guilhermelucas2267-spec" target="_blank" class="link-area">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>Veja meus projetos</p>
+                    </a>
+                </div>
+                <div class="item-area">
+                    <a href="mailto:guilhermelucasprogramador@gmail.com" class="link-area">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Gmail</h3>
+                        <p>Envie um email</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="titulo-secao">Contato</h2>
+            <div class="conteudo-contato">
+                <div class="info-contato">
+                    <h3>Vamos conversar!</h3>
+                    <div class="item-contato">
+                        <i class="fas fa-envelope"></i>
+                        <span>guilhermelucasprogramador@gmail.com</span>
+                    </div>
+                    <div class="item-contato">
+                        <i class="fas fa-phone"></i>
+                        <span>(11) 99999-9999</span>
+                    </div>
+                    <div class="item-contato">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>São Paulo, SP</span>
+                    </div>
+                </div>
+                <form class="formulario-contato" action="https://formsubmit.co/guilhermelucasprogramador@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                    <input type="hidden" name="_subject" value="Novo contato do portfólio!">
+                    
+                    <input type="text" name="name" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <input type="text" name="subject" placeholder="Assunto" required>
+                    <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit" class="botao">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Guilherme Lucas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
